@@ -26,6 +26,48 @@ img{
     border-radius: 9px;
 }
 
+.image{
+    position: relative;
+}
+
+/*How to hover a image on a image?/reference*/
+.image div{
+    position: absolute;
+    background-color:hsl(178, 100%, 50%);
+    top: 0;
+    width:305px;
+    height:305px;
+    opacity: 0;
+    margin-top: 20px;
+    margin-left: 23px;
+    border-radius: 9px;
+    /*this property represents
+      about the background-color, which 
+      is placed according to equilibrium
+      image size*/
+}
+
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image div svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*This property helps in placing
+     the svg.view img in center of the
+     equilibrium image.
+     */
+}
+
+/*hover image ends*/
+
+
+
 .p-1{
     text-align: left;
     padding-left: 25px;
@@ -97,3 +139,12 @@ p span {
 }
 
 
+.p-1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+span:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
